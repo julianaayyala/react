@@ -1,10 +1,14 @@
+import { useState } from 'react'
+import Questionario from '/src/componentes/questionario'
 import './App.css'
-import Formulario from './Formulario'
+import listaPerguntas from '/src/componentes/listaPerguntas'
 
 function App() {
 
   return (
-    <Formulario />
+    <>
+      <Questionario listaPerguntas={listaPerguntas}/>
+    </>
   )
 }
 
